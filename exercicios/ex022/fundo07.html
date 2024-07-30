@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Alinamenhento vertical</title>
+    <style>
+        /*Todo posicionamento de um box em html por padrão é pocionamento relative*/
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 95vh;
+            background-color: purple;
+            padding: 10px;
+
+        }
+        /*Ou seja para alinhar verticamnete e horizontalmente o container que esta do lado de fora precisa ter o posiciomanennto absolute o o que esta dentro do container no caso conteudo o  posicionemento é absolute. */
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position:  absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            /*Quando deixamos o  position absolute podemos usar o left, top.   */    
+            top: 50%;
+            left: 50%;
+            /*Fazendo isso deixamos o canto superior do conteudo alinhado com o centro do container pois  ele começa na metade do topo e na metade da esquerda (50%) */
+
+            /*para que todo o conteudo fique alinhado no centro precizamos usar o transform: translate(tranformação de translação) usando numeros negativos ele alinha para cima e para a esquerda*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
