@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <STyle>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+           
+        }
+
+      
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: right; /*alinhamento horinzontal*/
+            vertical-align: top;
+            vertical-align: middle; /*quando queremos alinhar no vertcalmente no centro usamos middle*/
+            vertical-align: bottom;
+        }
+
+       
+    </STyle>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <!-- Hierarquia de tabelas (simples)
+        Table = tabela
+        Table row = linha de tabela
+            Table header = cabeçalho de tabela
+            Table data = dados de tabela -->
+
+    
+    <table>
+        <tr class="linha"> <!-- primeira linha -->
+            <td>A1</td> <!--Dados-->
+            <td>B1</td>
+            <td>C1</td>
+
+        </tr>
+        <tr> <!--Segunda linha-->
+            <td class="dado">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
