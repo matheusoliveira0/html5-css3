@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste </title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--Caso o autocomplete esteja ligado precisaremos informar ao nevegador o que sao as labels para ele segerir informaçoes cadastradas anteriormente-->
+        <p>
+            <label for="iusu">Autocomplete:</label>
+            <input type="text" name="usu" id="iusu" autocomplete="username"> <!--Nesse caso o label é nome de usuario mas tem diversas opções como telefone, endereço, sexo data de nascimento etc....-->
+        </p>
+        <p>
+            <!-- Autocomplete para senhas  -->
+            <label for="isen">Senha autocomplete:</label>
+            <input type="password" name="sen" id="isen" autocomplete="current-password"> <!--para senha atual para aceesar o login -->
+        </p>
+        <p>
+            <label for="isen">Senha autocomplete2:</label>
+            <input type="password" name="sen" id="isen" autocomplete="new-password"> <!--para realizar cadastro ou atualizar senhas-->
+        </p>
+
+        <p>
+            <label for="iusu">Usuário Obrigatorio:</label>
+            <input type="text" name="usu" id="iusu" required> <!--Para que o usuario nao envie os dados em branco usamos required no imput-->
+        </p>
+        <p>
+            <label for="iusu">Num caractere:</label>
+            <input type="text" name="usu" id="iusu" minlength="5" maxlength="7"> <!--minlenght para colocar qtd minima de caracteres e maxlenght para qtd max -->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" minlength="5" maxlength="7"> <!--type password para senhas -->
+        </p>
+
+         <p>
+        <label for="iusu">Tamanho caixa:</label>
+         <input type="text" name="usu" id="iusu" size="5"> <!--para o tamanho da caixa que será inserido as informaçoes-->
+         </p>
+         <p>
+         <label for="iusu">Dicas:</label>
+         <input type="text" name="usu" id="iusu" placeholder="nome do usuário"> <!--Para dar dicas ao usuario-->
+         </p>      
+
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Limpar"> <!--Botao para apagasr os dados inseridos no formulário-->
+
+
+    </form>
+</body>
+</html>
