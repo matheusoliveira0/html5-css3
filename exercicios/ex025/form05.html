@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 05</title>
+
+</head>
+<body>
+    <h1>Exemplo de formlário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <!--Todos os botoes de radio do mesmo grupo presisam ter o mesmo name para que apenas um seja selecionado-->
+            <input type="radio" name="sexo" id="isxfem" value="F" checked> <!--Checked serve para ser marcado automaticamente--><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="esfut"> <label for="esfut">Futebol</label> <!--criei um label nesse para que ao clicar texto futebol ele tambem selecione a checkbox-->
+            <input type="checkbox" name="esnat" id="esnat"> <label for="esnat">Natação</label>
+            <input type="checkbox" name="esbas"id="esbas"> Basquete <!--Sem o label ao clicar no texto a checkbox nao é selecionada-->
+            <input type="checkbox" name="esvolei" id="esvolei"> Volei
+            
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
