@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            
+            width: 550px;
+            border-collapse: collapse;
+
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        th {
+            text-align: center;
+
+        }
+       th, td {
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Grupos</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="colgroup" colspan="3">Filmes</th> <!--Aqui estou definindo que o scope sao o grupo de 3 colunas que estao abaixo desta celula-->
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th> <!--Aqui o scope sao o grupo de 3 linhas ao lado desta celula-->
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Hulk</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Oblivion</td>
+                <td>Rambo</td>
+                <td>Matrix</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Big Hero</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th> <!--Aqui o scope sao o grupo de 3 linhas ao lado desta celula-->
+                <td>Bruno Mendonça</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+</body>
+</html>
